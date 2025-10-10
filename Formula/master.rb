@@ -10,7 +10,7 @@ class Master < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/sikalabsx/master/releases/download/v2025.10.16/master_v2025.10.16_darwin_amd64.tar.gz"
-      sha256 "d02661ef9b08f466adce56463a63d1a3386b50cb56f954413e6c31c3f8ee8ffc"
+      sha256 "1b8b8689e311a077f15de23efbf7081ec7e7d3e0d6bfd8e0e103df0d08c4b426"
 
       def install
         bin.install "master"
@@ -21,7 +21,7 @@ class Master < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/sikalabsx/master/releases/download/v2025.10.16/master_v2025.10.16_darwin_arm64.tar.gz"
-      sha256 "ceb517ad11547fcd3fc86925b1f3a4aa13f1d4ca5301bc92f12de9fca06e63b2"
+      sha256 "ddb2fc88dd5e66a1845740c04d0e711376bd7cf72c5ff44aa2227348b1612d80"
 
       def install
         bin.install "master"
@@ -35,7 +35,7 @@ class Master < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/sikalabsx/master/releases/download/v2025.10.16/master_v2025.10.16_linux_amd64.tar.gz"
-      sha256 "a046c8ae61e9ffe70d0eb2c8b656486a9477068af24922c10431d3a24452e5e0"
+      sha256 "d927f4f39433420281a5ee1a7b1abd2d5fcf6bf8216cd4ae4ae87bde37887859"
       def install
         bin.install "master"
         bin.install "master_slu"
@@ -45,7 +45,7 @@ class Master < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/sikalabsx/master/releases/download/v2025.10.16/master_v2025.10.16_linux_arm64.tar.gz"
-      sha256 "a40019a89d2b35f8569bd3f045a12c27906f7403401d6d57e1f1edd293a56a07"
+      sha256 "6c46e2f3d586c8634b136982d4245bb5f51a8dc738f358e01afdca792d30eedd"
       def install
         bin.install "master"
         bin.install "master_slu"
