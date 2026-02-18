@@ -5,52 +5,56 @@
 class Master < Formula
   desc "master"
   homepage "https://github.com/sikalabsx/master"
-  version "2026.2.8"
+  version "2026.2.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sikalabsx/master/releases/download/v2026.2.8/master_v2026.2.8_darwin_amd64.tar.gz"
-      sha256 "e0a451be4451a6d8dde950d90259d7c28f07039156ca91242253968a3247ca45"
+      url "https://github.com/sikalabsx/master/releases/download/v2026.2.9/master_v2026.2.9_darwin_amd64.tar.gz"
+      sha256 "00f8942cc7c0fb4b59db446fdab205b8eabdb295684dccf0e01964ee5e09c8a2"
 
       def install
         bin.install "master"
         bin.install "master_slu"
         bin.install "master_slr"
         bin.install "master_tergum"
+        bin.install "master_mon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sikalabsx/master/releases/download/v2026.2.8/master_v2026.2.8_darwin_arm64.tar.gz"
-      sha256 "aeb9033e2888423d723bd03cee1f5143e611c70bfd3c688e3d89af50f76483fa"
+      url "https://github.com/sikalabsx/master/releases/download/v2026.2.9/master_v2026.2.9_darwin_arm64.tar.gz"
+      sha256 "fc92dc95f8c002bdd6495b2e39ab25739fbfdaee714b6d99271564c7edcc6821"
 
       def install
         bin.install "master"
         bin.install "master_slu"
         bin.install "master_slr"
         bin.install "master_tergum"
+        bin.install "master_mon"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sikalabsx/master/releases/download/v2026.2.8/master_v2026.2.8_linux_amd64.tar.gz"
-      sha256 "e114c9b03ca7237b670a92f25816bd73a9d4cea5137b58f4810f2432ed0f86fd"
+      url "https://github.com/sikalabsx/master/releases/download/v2026.2.9/master_v2026.2.9_linux_amd64.tar.gz"
+      sha256 "27ab3befc626530098c74a2463c8fb02f6bc8e68f1a582adab3405c7638e3441"
       def install
         bin.install "master"
         bin.install "master_slu"
         bin.install "master_slr"
         bin.install "master_tergum"
+        bin.install "master_mon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sikalabsx/master/releases/download/v2026.2.8/master_v2026.2.8_linux_arm64.tar.gz"
-      sha256 "94e8c666b72f3ed88385fcfb959ac86e8e849aab05951e7e67440ac822d6888c"
+      url "https://github.com/sikalabsx/master/releases/download/v2026.2.9/master_v2026.2.9_linux_arm64.tar.gz"
+      sha256 "c6ab3866e3a8ace28fc0eb40fa9e0d8bc0c9d1f1d39c5e0f3eb0d22bd17f268c"
       def install
         bin.install "master"
         bin.install "master_slu"
         bin.install "master_slr"
         bin.install "master_tergum"
+        bin.install "master_mon"
       end
     end
   end
