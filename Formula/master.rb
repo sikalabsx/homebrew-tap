@@ -5,12 +5,12 @@
 class Master < Formula
   desc "master"
   homepage "https://github.com/sikalabsx/master"
-  version "2026.2.15"
+  version "2026.2.16"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sikalabsx/master/releases/download/v2026.2.15/master_v2026.2.15_darwin_amd64.tar.gz"
-      sha256 "71c67bb2018d1ab93776cf370380353f873eee15695bb1a99cb395dfe7cec4cd"
+      url "https://github.com/sikalabsx/master/releases/download/v2026.2.16/master_v2026.2.16_darwin_amd64.tar.gz"
+      sha256 "ed0235c4d8430972538f965231063e0dad2342e376cc39a12b513bf2519fac0d"
 
       def install
         bin.install "master"
@@ -21,8 +21,8 @@ class Master < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sikalabsx/master/releases/download/v2026.2.15/master_v2026.2.15_darwin_arm64.tar.gz"
-      sha256 "dad1c99cc0086b46074f9dfe0c22645421eeffb5ebafde0b83d6e337d340a990"
+      url "https://github.com/sikalabsx/master/releases/download/v2026.2.16/master_v2026.2.16_darwin_arm64.tar.gz"
+      sha256 "ba3ebbe0c84330f4c66a857a97ff73de30be00d10b61016996d991cb69bebd14"
 
       def install
         bin.install "master"
@@ -36,8 +36,8 @@ class Master < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sikalabsx/master/releases/download/v2026.2.15/master_v2026.2.15_linux_amd64.tar.gz"
-      sha256 "32676df88ffc1422485fb2d8ecb7a5369a90ac01efc41675ac2d3efc94324c53"
+      url "https://github.com/sikalabsx/master/releases/download/v2026.2.16/master_v2026.2.16_linux_amd64.tar.gz"
+      sha256 "f400d989f1c387eb064aade49c00846048210d19482442ef6fa8df6e09a25933"
       def install
         bin.install "master"
         bin.install "master_slu"
@@ -47,8 +47,8 @@ class Master < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sikalabsx/master/releases/download/v2026.2.15/master_v2026.2.15_linux_arm64.tar.gz"
-      sha256 "63d86f1e917335c91c80c831693c0c8a297153e92d86e85a4b2569c4c1bf5d65"
+      url "https://github.com/sikalabsx/master/releases/download/v2026.2.16/master_v2026.2.16_linux_arm64.tar.gz"
+      sha256 "27dc818f8ffd29c3404ab62cb432df5f79bc9e772f110b242c281a74a320e41e"
       def install
         bin.install "master"
         bin.install "master_slu"
